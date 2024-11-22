@@ -1,0 +1,8 @@
+sql recovery
+ALTER DATABASE [DBName] SET EMERGENCY;
+ALTER DATABASE [DBName] set single_user
+DBCC CHECKDB ([DBName], REPAIR_ALLOW_DATA_LOSS) WITH ALL_ERRORMSGS;
+GO ALTER DATABASE [DBName] set multi_user
+-- copy DNName and paste them in dbname
+-- this also may error out if the database is really corrupted
+-- use recent back up to recover if commands do not work
