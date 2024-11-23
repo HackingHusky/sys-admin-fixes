@@ -1,0 +1,4 @@
+select 
+	name, is_auto_close_on
+From 
+	master.sys.databases
