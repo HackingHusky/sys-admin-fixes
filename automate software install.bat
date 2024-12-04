@@ -1,0 +1,6 @@
+@echo off
+echo Installing Application 1…
+msiexec /i “C:\Path\to\Application1.msi” /qn
+echo Installing Application 2…
+msiexec /i “C:\Path\to\Application2.msi” /qn
+rem Add more installation commands as needed
