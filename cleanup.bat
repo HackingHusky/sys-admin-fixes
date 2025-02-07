@@ -14,4 +14,10 @@ del /f /s /q %systemroot%\memory.dmp
 del /f /s /q %systemroot%\Minidump\*.*
 defrag c:
 Rem ipconfig/flushdns if needed
-Rem wsrest.exe as well for windows store cache
+Rem wsrest.exe 
+::as well for windows store cache
+Rem perfmon /report
+Rem cleanmgr
+Rem chkdsk /f
+Rem wuaclt /detectnow
+Rem wuaclt /updatenow
